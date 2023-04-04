@@ -1,0 +1,22 @@
+* 简介
+一个将导出的 =ExportJson= 还原为 =cocos-studio 1.6= 项目文件的脚本.
+* 使用
+执行以下命令:
+#+begin_src shell :tangle no :shebang #!/bin/bash
+  python back_ani.py input_dir
+#+end_src
+=input_dir= 为输入文件目录,结构应如下:
+#+begin_example
+action_renwu/
+├── action_renwu0
+├── action_renwu0.plist
+├── action_renwu0.png
+├── action_renwu1
+├── action_renwu1.plist
+├── action_renwu1.png
+├── action_renwu2
+├── action_renwu2.plist
+├── action_renwu2.png
+└── action_renwu.ExportJson
+#+end_example
+输出文件在 =./out/= 文件夹下.
