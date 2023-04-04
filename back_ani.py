@@ -28,6 +28,14 @@ if __name__ == '__main__':
     proj_name = os.path.basename(dirname) if os.path.basename(
         dirname) else os.path.basename(os.path.dirname(dirname))
     out_dir = "out/" + proj_name
+
+    if not os.path.exists('out/'):
+        os.system('mkdir out/')
+
+    if os.path.exists(out_dir):
+        print("文件已存在, 请清理 out/ 目录.")
+        sys.exit()
+
     os.system('cp -r NewAnimation/ ' + out_dir)
 
     # 重命名项目文件内容
