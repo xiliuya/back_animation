@@ -1,0 +1,3 @@
+[submodule "texture_unpacker"]
+	path = texture_unpacker
+	url = https://github.com/dingmingxin/texture_unpacker
